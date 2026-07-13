@@ -4,7 +4,7 @@
 
 [functions]
   node_bundler = "esbuild"
-  included_files = ["node_modules/@fontsource/montserrat/files/*.woff2"]
+  included_files = ["node_modules/@fontsource/montserrat/files/*.woff"]
 
 [[headers]]
   for = "/.netlify/functions/*"
