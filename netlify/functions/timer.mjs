@@ -3,7 +3,9 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import satori from "satori";
 import sharp from "sharp";
-import { GIFEncoder, quantize, applyPalette } from "gifenc";
+import gifenc from "gifenc";
+
+const { GIFEncoder, quantize, applyPalette } = gifenc;
 
 const WIDTH = 1110;
 const HEIGHT = 372;
