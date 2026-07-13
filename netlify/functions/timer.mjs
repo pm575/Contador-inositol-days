@@ -25,8 +25,8 @@ let fontsPromise;
 function loadFonts() {
   if (!fontsPromise) {
     fontsPromise = Promise.all([
-      readFont("montserrat-latin-800-normal.woff2"),
-      readFont("montserrat-latin-900-normal.woff2")
+      readFont("montserrat-latin-800-normal.woff"),
+      readFont("montserrat-latin-900-normal.woff")
     ]).then(([bold, black]) => [
       { name: "Montserrat", data: bold, weight: 800, style: "normal" },
       { name: "Montserrat", data: black, weight: 900, style: "normal" }
