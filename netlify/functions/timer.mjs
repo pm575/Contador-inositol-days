@@ -14,7 +14,8 @@ const FRAME_COUNT = 60;
 const FRAME_DELAY_MS = 1000;
 
 const COLORS = {
-  background: "#EEE7FA",
+  backgroundStart: "#EEE7FA",
+  backgroundEnd: "#FDFCF8",
   border: "#FF5AA7",
   number: "#A30A70",
   label: "#430048"
@@ -197,7 +198,8 @@ function baseStyle() {
   return {
     width: WIDTH,
     height: HEIGHT,
-    backgroundColor: COLORS.background,
+    backgroundColor: COLORS.backgroundStart,
+    backgroundImage: `linear-gradient(180deg, ${COLORS.backgroundStart} 0%, ${COLORS.backgroundEnd} 100%)`,
     display: "flex",
     alignItems: "center",
     justifyContent: "center"
