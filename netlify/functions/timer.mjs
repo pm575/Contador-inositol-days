@@ -139,21 +139,8 @@ function baseStyle() {
   return {
     width: WIDTH,
     height: HEIGHT,
-
-    /*
-      Color de respaldo por si el degradado no pudiera renderizarse.
-    */
     backgroundColor: COLORS.backgroundStart,
-
-    /*
-      Degradado vertical desde el lavanda original hasta #FDFCF8.
-    */
-    backgroundImage: `linear-gradient(
-      180deg,
-      ${COLORS.backgroundStart} 0%,
-      ${COLORS.backgroundEnd} 100%
-    )`,
-
+    backgroundImage: `linear-gradient(180deg, ${COLORS.backgroundStart} 0%, ${COLORS.backgroundEnd} 100%)`,
     display: "flex",
     alignItems: "center",
     justifyContent: "center"
